@@ -453,4 +453,11 @@ ninja.data = [{
         handler: () => {
           window.open("https://github.com/xmqian03", "_blank");
         },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=DpbSbQoAAAAJ", "_blank");
+        },
       },];
