@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: School of Computer Science, Fudan University
+subtitle:
 
 profile:
   align: right
