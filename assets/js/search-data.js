@@ -383,16 +383,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-started-an-internship-at-mosi-intelligence-working-on-the-moss-vl-project",
+          title: 'Started an internship at Mosi Intelligence, working on the MOSS-VL project.',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-i-will-join-fudan-university-as-a-phd-student-in-fall-2026-advised-by-prof-xipeng-qiu",
+          title: 'I will join Fudan University as a PhD student in Fall 2026, advised...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
