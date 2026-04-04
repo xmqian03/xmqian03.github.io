@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an incoming PhD student at [Fudan University](https://www.fudan.edu.cn/en/), working with the Vision Group of the [OpenMOSS](https://www.open-moss.com/) team (also known as [FNLP-Vision](https://github.com/fnlp-vision)), under the supervision of Prof. [Xipeng Qiu](https://xpqiu.github.io/). I received my B.Eng. degree from the [School of Software](https://software.nju.edu.cn/), [Nanjing University](https://www.nju.edu.cn/en/).
+I am an incoming PhD student at [Fudan University](https://www.fudan.edu.cn/en/), working with the Vision Group of the [OpenMOSS](https://www.open-moss.com/) team (also known as [FNLP-Vision](https://github.com/fnlp-vision)), under the supervision of Prof. [Xipeng Qiu](https://xpqiu.github.io/). I received my B.Eng. degree from the [School of Software](https://software.nju.edu.cn/), [Nanjing University](https://www.nju.edu.cn/en/). I am currently interning at [Mosi Intelligence](http://mosi-ai.com/), dedicated to building advanced multimodal foundation models.
 
-My research focuses on **multimodal video understanding** with large foundation models. I am broadly interested in multimodal foundation models, and my work is dedicated to advancing their capabilities in understanding and reasoning over visual content.
+My research focuses on **multimodal video understanding** with large foundation models. I am broadly interested in building and improving multimodal foundation models, with the goal of enabling machines to perceive, comprehend, and reason over visual content — particularly in the video domain. My current work explores how to effectively integrate visual and linguistic information to advance video understanding capabilities.
