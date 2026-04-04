@@ -215,6 +215,19 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+// About page: vertically center bio text with profile photo
+.about-content-wrapper {
+  .profile {
+    width: 100%;
+    margin-left: 0;
+    order: -1;
+  }
+
+  .about-bio {
+    min-width: 100%;
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
@@ -223,6 +236,18 @@ ul.task-list input[type="checkbox"] {
       p {
         display: block;
       }
+    }
+  }
+
+  .about-content-wrapper {
+    .profile {
+      width: 30%;
+      margin-left: 1rem;
+      order: 0;
+    }
+
+    .about-bio {
+      min-width: 60%;
     }
   }
 }
