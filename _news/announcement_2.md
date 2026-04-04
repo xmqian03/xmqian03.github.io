@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-04-04
+date: 2025-07-01
 inline: true
 related_posts: false
 ---
 
-I will join [Fudan University](https://www.fudan.edu.cn/en/) as a PhD student in Fall 2026, advised by Prof. [Xipeng Qiu](https://xpqiu.github.io/).
+Started an internship at the [OpenMOSS](https://www.open-moss.com/) team, working on [MOSS-Video-Preview](https://github.com/fnlp-vision/MOSS-Video-Preview) and MOSS-VL projects.
