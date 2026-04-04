@@ -383,11 +383,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-started-an-internship-at-mosi-intelligence-working-on-the-moss-vl-project",
-          title: 'Started an internship at Mosi Intelligence, working on the MOSS-VL project.',
+            },},{id: "news-started-an-internship-at-the-openmoss-team-working-on-moss-video-preview-and-moss-vl-projects",
+          title: 'Started an internship at the OpenMOSS team, working on MOSS-Video-Preview and MOSS-VL projects....',
           description: "",
-          section: "News",},{id: "news-i-will-join-fudan-university-as-a-phd-student-in-fall-2026-advised-by-prof-xipeng-qiu",
-          title: 'I will join Fudan University as a PhD student in Fall 2026, advised...',
+          section: "News",},{id: "news-started-an-internship-at-mosi-intelligence-working-on-the-moss-vl-project",
+          title: 'Started an internship at Mosi Intelligence, working on the MOSS-VL project.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
