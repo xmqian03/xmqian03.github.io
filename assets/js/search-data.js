@@ -393,7 +393,7 @@ ninja.data = [{
           title: 'We officially released MOSS-VL! Check out our demo.',
           description: "",
           section: "News",},{id: "news-we-released-moss-vl-realtime-achieving-state-of-the-art-real-time-understanding-check-out-our-blog",
-          title: 'We released MOSS-VL-RealTime, achieving state-of-the-art real-time understanding! Check out our blog.',
+          title: 'We released MOSS-VL-Realtime, achieving state-of-the-art real-time understanding! Check out our blog.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
