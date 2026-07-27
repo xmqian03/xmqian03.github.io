@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started an internship at [Mosi Intelligence](http://mosi-ai.com/), working on the MOSS-VL project.
+Started an internship at [MOSI Intelligence](http://mosi-ai.com/), working on the MOSS-VL project.
