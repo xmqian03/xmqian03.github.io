@@ -98,6 +98,24 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Generate resume PDF 📄
+        # Renders the built /cv/ page with headless Chrome so the "保存为 PDF"
+        # button can serve a ready-made file. Failure here must not block the
+        # site deploy — the previously deployed PDF simply stays in place.
+        if: github.event_name != 'pull_request'
+        continue-on-error: true
+        run: |
+          sudo apt-get install -y fonts-noto-cjk
+          mkdir -p "$RUNNER_TEMP/pdfgen" && cd "$RUNNER_TEMP/pdfgen"
+          npm init -y >/dev/null 2>&1
+          npm install puppeteer --no-fund --no-audit
+          cd "$GITHUB_WORKSPACE/_site" && python3 -m http.server 4417 >/dev/null 2>&1 &
+          for i in $(seq 1 30); do curl -sf http://localhost:4417/cv/ >/dev/null && break; sleep 1; done
+          mkdir -p "$GITHUB_WORKSPACE/_site/assets/pdf"
+          NODE_PATH="$RUNNER_TEMP/pdfgen/node_modules" \
+            node "$GITHUB_WORKSPACE/_scripts/generate_resume_pdf.js" \
+            "http://localhost:4417/cv/" \
+            "$GITHUB_WORKSPACE/_site/assets/pdf/resume_zh.pdf"
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4

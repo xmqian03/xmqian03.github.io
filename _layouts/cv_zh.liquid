@@ -4,9 +4,13 @@ layout: default
 
 <div class="post">
   <div class="resume-toolbar">
-    <button class="resume-print-btn" onclick="window.print()">
+    <a
+      class="resume-print-btn"
+      href="{{ 'assets/pdf/resume_zh.pdf' | relative_url }}"
+      download="钱晓萌-简历.pdf"
+    >
       <i class="fa-solid fa-file-pdf"></i> 保存为 PDF
-    </button>
+    </a>
   </div>
 
   <article class="resume-sheet">
@@ -80,6 +84,8 @@ layout: default
     text-align: right;
   }
   .resume-print-btn {
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid var(--global-divider-color);
     background: transparent;
     color: var(--global-text-color);
@@ -91,6 +97,7 @@ layout: default
   .resume-print-btn:hover {
     color: var(--global-theme-color);
     border-color: var(--global-theme-color);
+    text-decoration: none;
   }
   .resume-sheet {
     background: #ffffff;
@@ -103,6 +110,7 @@ layout: default
     font-family:
       "Times New Roman",
       "Noto Serif SC",
+      "Noto Serif CJK SC",
       "Songti SC",
       "STSong",
       "SimSun",
@@ -220,9 +228,15 @@ layout: default
     .resume-sheet {
       box-shadow: none;
       border-radius: 0;
-      margin: 0;
-      padding: 0;
+      margin: 0 auto;
+      padding: 3.2rem 3.6rem;
       max-width: 100%;
+    }
+    .resume-item {
+      break-inside: avoid-page;
+    }
+    .resume-section-title {
+      break-after: avoid;
     }
   }
 </style>
