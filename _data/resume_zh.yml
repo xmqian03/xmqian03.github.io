@@ -48,7 +48,7 @@ sections:
   items:
   - heading: OpenMOSS 团队（复旦大学）× MOSI Intelligence（模思智能）
     url: https://www.open-moss.com/
-    subheading: 研究实习生 · 训练数据方向
+    subheading: 算法实习生
     date: 2025.07 – 至今
     lines:
     - MOSS-VL 系列模型 Core Contributor，负责训练数据方向，覆盖数据基建、数据组装与交付、数据合成，贯穿预训练与后训练全阶段
