@@ -5,6 +5,8 @@
 #
 # 结构说明：
 #   name / name_en / tagline / contacts  页面头部（姓名、一句话介绍、联系方式）
+#     contacts 每项可带 icon 字段（可选）：Font Awesome / Academicons 类名，
+#     如 fa-solid fa-envelope、fa-brands fa-github、ai ai-google-scholar
 #   sections                              简历的各个板块，按顺序渲染
 #     - title: 板块标题
 #       items: 板块下的条目，两种写法：
@@ -25,12 +27,16 @@ tagline: 复旦大学在读博士 · 多模态基础模型
 contacts:
   - value: 2537831239@qq.com
     url: mailto:2537831239@qq.com
+    icon: fa-solid fa-envelope
   - value: xmqian03.github.io
     url: https://xmqian03.github.io
+    icon: fa-solid fa-globe
   - value: GitHub · xmqian03
     url: https://github.com/xmqian03
+    icon: fa-brands fa-github
   - value: Google Scholar
     url: https://scholar.google.com/citations?user=DpbSbQoAAAAJ
+    icon: ai ai-google-scholar
 
 sections:
 - title: 教育经历

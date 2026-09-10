@@ -25,9 +25,9 @@ layout: default
       <p class="resume-contacts">
         {% for c in site.data.resume_zh.contacts %}
           {%- if c.url -%}
-            <a href="{{ c.url }}">{{ c.value }}</a>
+            <a href="{{ c.url }}">{% if c.icon %}<i class="{{ c.icon }}"></i> {% endif %}{{ c.value }}</a>
           {%- else -%}
-            {{ c.value }}
+            {% if c.icon %}<i class="{{ c.icon }}"></i> {% endif %}{{ c.value }}
           {%- endif -%}
           {%- unless forloop.last %}<span class="resume-contact-sep">·</span>{% endunless -%}
         {% endfor %}
@@ -147,6 +147,11 @@ layout: default
   .resume-contact-sep {
     margin: 0 0.5rem;
     color: #afb8c1;
+  }
+  .resume-contacts i {
+    margin-right: 0.22rem;
+    font-size: 0.85em;
+    color: #57606a;
   }
   .resume-section {
     margin-top: 1.5rem;
