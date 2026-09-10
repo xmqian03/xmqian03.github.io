@@ -51,12 +51,10 @@ sections:
     subheading: 研究实习生 · 训练数据方向
     date: 2025.07 – 至今
     lines:
-    - 在导师邱锡鹏教授的课题组（OpenMOSS）及其创业公司（模思智能）开展多模态基础模型研究，MOSS-VL 系列模型即以模思智能名义对外发布
     - MOSS-VL 系列模型 Core Contributor，负责训练数据方向，覆盖数据基建、数据组装与交付、数据合成，贯穿预训练与后训练全阶段
   - heading: MOSS-VL-RealTime（0708 版本）
     url: https://github.com/OpenMOSS/MOSS-VL
     subheading: OpenMOSS · SFT 数据负责人
-    date: 2026.04 – 2026.07
     lines:
     - 设计并定稿 42 个数据桶的 SFT 数据组装 recipe（QA 主配比、类别与数据集均匀 + 桶内 token balanced 策略），三版迭代交付，最终版含 756 万条训练样本
     - 独立开发 asb 自动化数据组装工具：配置文件驱动，支持按桶抽取、按类去重、bitmap 版本记录与断点续传，内置 caption / OCR 与 interleaved QA 数据增强器
@@ -64,7 +62,6 @@ sections:
   - heading: MOSS-VL（0408 版本）
     url: https://github.com/OpenMOSS/MOSS-VL
     subheading: OpenMOSS · 数据基建与数据组装
-    date: 2025.09 – 2026.04
     lines:
     - 从零搭建训练数据基建：视频 / 图片 / 文本预处理、精确匹配去重与 MongoDB 入库流程，首批入库 478 个数据集（约 6,600 万条 QA、6,641 万图片、413 万视频）
     - 负责预训练 Stage 1–4 与 SFT 各阶段的数据组装与逐版交付：数据梳理、token 统计、配比抽取
