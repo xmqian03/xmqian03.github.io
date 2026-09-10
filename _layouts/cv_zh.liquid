@@ -1,0 +1,229 @@
+---
+layout: default
+---
+
+<div class="post">
+  <div class="resume-toolbar">
+    <button class="resume-print-btn" onclick="window.print()">
+      <i class="fa-solid fa-file-pdf"></i> 保存为 PDF / 打印
+    </button>
+  </div>
+
+  <article class="resume-sheet">
+    <header class="resume-header">
+      <h1 class="resume-name">
+        {{ site.data.resume_zh.name }}
+        <span class="resume-name-en">{{ site.data.resume_zh.name_en }}</span>
+      </h1>
+      {% if site.data.resume_zh.tagline %}
+        <p class="resume-tagline">{{ site.data.resume_zh.tagline }}</p>
+      {% endif %}
+      <p class="resume-contacts">
+        {% for c in site.data.resume_zh.contacts %}
+          {%- if c.url -%}
+            <a href="{{ c.url }}">{{ c.value }}</a>
+          {%- else -%}
+            {{ c.value }}
+          {%- endif -%}
+          {%- unless forloop.last %}<span class="resume-contact-sep">·</span>{% endunless -%}
+        {% endfor %}
+      </p>
+    </header>
+
+    {% for section in site.data.resume_zh.sections %}
+      <section class="resume-section">
+        <h2 class="resume-section-title">{{ section.title }}</h2>
+        {% for item in section.items %}
+          <div class="resume-item">
+            {% if item.bullets %}
+              <ul class="resume-lines">
+                {% for b in item.bullets %}
+                  <li>{{ b }}</li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <div class="resume-item-head">
+                <span class="resume-item-heading">
+                  {%- if item.url -%}
+                    <a href="{{ item.url }}">{{ item.heading }}</a>
+                  {%- else -%}
+                    {{ item.heading }}
+                  {%- endif -%}
+                </span>
+                {% if item.date %}
+                  <span class="resume-item-date">{{ item.date }}</span>
+                {% endif %}
+              </div>
+              {% if item.subheading %}
+                <div class="resume-item-subheading">{{ item.subheading }}</div>
+              {% endif %}
+              {% if item.lines %}
+                <ul class="resume-lines">
+                  {% for line in item.lines %}
+                    <li>{{ line }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </section>
+    {% endfor %}
+  </article>
+</div>
+
+<style>
+  /* ===== 在线 PDF 风格简历：始终渲染为白纸黑字，不随暗色主题切换 ===== */
+  .resume-toolbar {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: right;
+  }
+  .resume-print-btn {
+    border: 1px solid var(--global-divider-color);
+    background: transparent;
+    color: var(--global-text-color);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .resume-print-btn:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+  }
+  .resume-sheet {
+    background: #ffffff;
+    color: #1f2328;
+    max-width: 850px;
+    margin: 1.2rem auto 2.5rem;
+    padding: 3.2rem 3.6rem;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.14);
+    border-radius: 0;
+    font-family:
+      "Times New Roman",
+      "Noto Serif SC",
+      "Songti SC",
+      "STSong",
+      "SimSun",
+      "Source Han Serif SC",
+      serif;
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+  .resume-header {
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+  .resume-name {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 0 0.35rem;
+    color: #1f2328;
+  }
+  .resume-name-en {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #57606a;
+    margin-left: 0.4rem;
+  }
+  .resume-tagline {
+    margin: 0 0 0.4rem;
+    color: #444c56;
+  }
+  .resume-contacts {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #57606a;
+  }
+  .resume-contact-sep {
+    margin: 0 0.5rem;
+    color: #afb8c1;
+  }
+  .resume-section {
+    margin-top: 1.5rem;
+  }
+  .resume-section-title {
+    font-size: 1.12rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-variant: small-caps;
+    color: #1f2328;
+    border-bottom: 1px solid #1f2328;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.7rem;
+  }
+  .resume-item {
+    margin-bottom: 0.9rem;
+  }
+  .resume-item:last-child {
+    margin-bottom: 0;
+  }
+  .resume-item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .resume-item-heading {
+    font-weight: 700;
+  }
+  .resume-item-date {
+    color: #57606a;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+  .resume-item-subheading {
+    color: #444c56;
+  }
+  .resume-lines {
+    margin: 0.25rem 0 0;
+    padding-left: 1.2rem;
+  }
+  .resume-lines li {
+    margin-bottom: 0.15rem;
+  }
+  .resume-sheet a {
+    color: #1f2328;
+    text-decoration: underline;
+    text-decoration-color: #afb8c1;
+    text-underline-offset: 2px;
+  }
+  .resume-sheet a:hover {
+    color: var(--global-theme-color);
+  }
+
+  @media (max-width: 640px) {
+    .resume-sheet {
+      padding: 1.8rem 1.4rem;
+    }
+    .resume-name {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* 打印 / 导出 PDF：隐藏导航、页脚和按钮，只留简历纸张 */
+  @media print {
+    header,
+    footer,
+    .resume-toolbar,
+    #back-to-top,
+    .progress-container {
+      display: none !important;
+    }
+    body {
+      background: #ffffff !important;
+    }
+    .container {
+      margin-top: 0 !important;
+      max-width: 100% !important;
+    }
+    .resume-sheet {
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+</style>
