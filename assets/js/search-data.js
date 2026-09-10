@@ -393,17 +393,17 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-moss-video-preview",
           title: 'MOSS-Video-Preview',
-          description: "toward real-time video understanding via cross-attention",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/moss_video_preview/";
             },},{id: "projects-moss-vl-0408",
           title: 'MOSS-VL (0408)',
-          description: "0408 release — data infrastructure and full-stage training data assembly",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/moss_vl/";
             },},{id: "projects-moss-vl-realtime",
           title: 'MOSS-VL-RealTime',
-          description: "0708 release — an open vision-language model family for real-time interaction",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/moss_vl_realtime/";
             },},{
