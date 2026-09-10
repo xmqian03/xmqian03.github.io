@@ -14,7 +14,7 @@ layout: default
   </div>
 
   <article class="resume-sheet">
-    <header class="resume-header">
+    <div class="resume-header">
       <h1 class="resume-name">
         {{ site.data.resume_zh.name }}
         <span class="resume-name-en">{{ site.data.resume_zh.name_en }}</span>
@@ -32,7 +32,7 @@ layout: default
           {%- unless forloop.last %}<span class="resume-contact-sep">·</span>{% endunless -%}
         {% endfor %}
       </p>
-    </header>
+    </div>
 
     {% for section in site.data.resume_zh.sections %}
       <section class="resume-section">
@@ -211,8 +211,8 @@ layout: default
 
   /* 打印 / 导出 PDF：隐藏导航、页脚和按钮，只留简历纸张 */
   @media print {
-    header,
-    footer,
+    body > header,
+    body > footer,
     .resume-toolbar,
     #back-to-top,
     .progress-container {
