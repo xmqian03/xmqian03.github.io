@@ -2,10 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Model releases I have contributed to as a member of the OpenMOSS team.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
 horizontal: false
 ---
 
