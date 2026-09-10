@@ -1,0 +1,1 @@
+const puppeteer=require("puppeteer");(async()=>{const[a,t]=process.argv.slice(2),e=await puppeteer.launch({args:["--no-sandbox"]}),i=await e.newPage();await i.goto(a,{waitUntil:"networkidle0"}),await i.emulateMediaType("print"),await i.pdf({path:t,format:"A4",printBackground:!0,margin:{top:"0",right:"0",bottom:"0",left:"0"}}),await e.close()})();
