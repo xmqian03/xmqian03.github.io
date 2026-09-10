@@ -1,13 +1,20 @@
 ---
 layout: page
 title: MOSS-VL-RealTime
-description: 0708 release — an open vision-language model family for real-time interaction
+subtitle: An open vision-language model family for real-time interaction
 img: assets/img/publication_preview/moss_vl.png
 importance: 1
-category: work
+date_text: 2026.07
+links:
+  - label: GitHub
+    url: https://github.com/OpenMOSS/MOSS-VL
+  - label: Technical Report
+    url: https://arxiv.org/abs/2608.15045
+  - label: Demo
+    url: https://openmoss.github.io/MOSS-VL-Demo/#/
+  - label: Blog
+    url: https://openmoss.ai/MOSS-VL/
 ---
-
-**2026.07 release** · [GitHub](https://github.com/OpenMOSS/MOSS-VL) · [Technical Report](https://arxiv.org/abs/2608.15045) · [Demo](https://openmoss.github.io/MOSS-VL-Demo/#/) · [Blog](https://openmoss.ai/MOSS-VL/)
 
 MOSS-VL treats real-time interaction — perceiving while it speaks — as a first-class capability. Gated cross-attention with XRoPE lets the model keep watching incoming frames while generating, and a synthesized interaction corpus supervises when to speak, when to stay silent, and when to revise. MOSS-VL-Realtime posts the best average on three of four streaming benchmarks among open-source streaming models.
 

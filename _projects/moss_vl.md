@@ -1,13 +1,16 @@
 ---
 layout: page
 title: MOSS-VL (0408)
-description: 0408 release — data infrastructure and full-stage training data assembly
+subtitle: Data infrastructure and full-stage training data assembly
 img: assets/img/publication_preview/moss_vl.png
 importance: 2
-category: work
+date_text: 2026.04
+links:
+  - label: GitHub
+    url: https://github.com/OpenMOSS/MOSS-VL
+  - label: Technical Report
+    url: https://arxiv.org/abs/2608.15045
 ---
-
-**2026.04 release** · [GitHub](https://github.com/OpenMOSS/MOSS-VL) · [Technical Report](https://arxiv.org/abs/2608.15045)
 
 The first independently trained run of the MOSS-VL architecture, released alongside the 0708 family for research continuity. My work on this cycle covered the data stack from raw datasets to delivered training mixtures.
 
