@@ -62,13 +62,26 @@ sections:
     items:
       - heading: OpenMOSS 团队（复旦大学）
         url: https://www.open-moss.com/
-        subheading: 研究实习生
+        subheading: 研究实习生 · 训练数据方向
         date: 2025.07 – 至今
         lines:
-          - MOSS-VL 系列模型 Core Contributor，参与 MOSS-VL / MOSS-VL-Realtime / MOSS-Video-Preview 的研发与版本迭代
-          - 训练数据合成：设计并落地大规模数据合成管线（图像/视频 caption、OCR、目标定位、时序定位、实时交互数据等），支撑预训练与后训练各阶段的数据供给
-          - 数据质量治理：负责训练数据的指令丰富度审计、去重与清洗流程，建立数据质量与配比的分析方法
-          - 模型评测：搭建并维护评测流程，覆盖指令遵循（IFEval、MM-IFEval）与视频理解 benchmark，支撑版本间效果对比与失败案例分析
+          - MOSS-VL 系列模型 Core Contributor，负责训练数据方向，覆盖数据基建、数据组装与交付、数据合成，贯穿预训练与后训练全阶段
+      - heading: MOSS-VL-RealTime（0708 版本）
+        url: https://github.com/OpenMOSS/MOSS-VL
+        subheading: OpenMOSS · SFT 数据负责人
+        date: 2026.04 – 2026.07
+        lines:
+          - 设计并定稿 42 个数据桶的 SFT 数据组装 recipe（QA 主配比、类别与数据集均匀 + 桶内 token balanced 策略），三版迭代交付，最终版含 756 万条训练样本
+          - 独立开发 asb 自动化数据组装工具：配置文件驱动，支持按桶抽取、按类去重、bitmap 版本记录与断点续传，内置 caption / OCR 与 interleaved QA 数据增强器
+          - 参与设计数据治理体系：数据集三轴分类规范与配置文件格式、存量数据迁移与新旧分类映射打标；负责大海捞针 NIAH 任务的同源合成增强数据建设
+      - heading: MOSS-VL（0408 版本）
+        url: https://github.com/OpenMOSS/MOSS-VL
+        subheading: OpenMOSS · 数据基建与数据组装
+        date: 2025.09 – 2026.04
+        lines:
+          - 从零搭建训练数据基建：视频 / 图片 / 文本预处理、精确匹配去重与 MongoDB 入库流程，首批入库 478 个数据集（约 6,600 万条 QA、6,641 万图片、413 万视频）
+          - 负责预训练 Stage 1–4 与 SFT 各阶段的数据组装与逐版交付：数据梳理、token 统计、配比抽取
+          - 设计并实现 image / video caption 数据增强方案（多图序列扩展、多图拼接、多视频 interleaved 等）；完成身份信息数据的检测、改造与合成全流程
       - heading: MOSI Intelligence（摩斯智能）
         url: http://mosi-ai.com/
         subheading: 多模态大模型算法实习生
