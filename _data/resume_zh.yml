@@ -46,11 +46,12 @@ sections:
     date: 2022.09 – 2026.06
 - title: 实习与科研经历
   items:
-  - heading: OpenMOSS 团队（复旦大学）
+  - heading: OpenMOSS 团队（复旦大学）× MOSI Intelligence（模思智能）
     url: https://www.open-moss.com/
     subheading: 研究实习生 · 训练数据方向
     date: 2025.07 – 至今
     lines:
+    - 在导师邱锡鹏教授的课题组（OpenMOSS）及其创业公司（模思智能）开展多模态基础模型研究，MOSS-VL 系列模型即以模思智能名义对外发布
     - MOSS-VL 系列模型 Core Contributor，负责训练数据方向，覆盖数据基建、数据组装与交付、数据合成，贯穿预训练与后训练全阶段
   - heading: MOSS-VL-RealTime（0708 版本）
     url: https://github.com/OpenMOSS/MOSS-VL
@@ -68,12 +69,6 @@ sections:
     - 从零搭建训练数据基建：视频 / 图片 / 文本预处理、精确匹配去重与 MongoDB 入库流程，首批入库 478 个数据集（约 6,600 万条 QA、6,641 万图片、413 万视频）
     - 负责预训练 Stage 1–4 与 SFT 各阶段的数据组装与逐版交付：数据梳理、token 统计、配比抽取
     - 设计并实现 image / video caption 数据增强方案（多图序列扩展、多图拼接、多视频 interleaved 等）；完成身份信息数据的检测、改造与合成全流程
-  - heading: MOSI Intelligence（摩斯智能）
-    url: http://mosi-ai.com/
-    subheading: 多模态大模型算法实习生
-    date: 2026.03 – 至今
-    lines:
-    - 参与多模态基础模型的研发与迭代，负责训练数据构建与模型评测相关工作
 - title: 技术报告
   items:
   - heading: MOSS-VL Technical Report
