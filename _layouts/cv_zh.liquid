@@ -185,9 +185,8 @@ layout: default
   .resume-item-heading {
     font-weight: 700;
   }
-  /* 条目标题与联系方式的链接不加下划线，保持版面干净；hover 时变色 */
-  .resume-item-heading a,
-  .resume-contacts a {
+  /* 条目标题的链接不加下划线（提高优先级，覆盖 .resume-sheet a 的默认下划线） */
+  .resume-sheet .resume-item-heading a {
     text-decoration: none;
   }
   .resume-item-date {
