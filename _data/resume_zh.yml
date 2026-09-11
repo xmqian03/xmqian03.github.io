@@ -60,14 +60,14 @@ sections:
     - MOSS-VL 系列模型 Core Contributor，负责训练数据方向，覆盖数据基建、数据组装与交付、数据合成，贯穿预训练与后训练全阶段
   - heading: MOSS-VL-RealTime
     url: https://github.com/OpenMOSS/MOSS-VL
-    subheading: OpenMOSS · SFT 数据负责人
+    subheading: SFT 数据负责人
     lines:
     - 设计并定稿 42 个数据桶的 SFT 数据组装 recipe（QA 主配比、类别与数据集均匀 + 桶内 token balanced 策略），三版迭代交付，最终版含 756 万条训练样本
     - 独立开发 asb 自动化数据组装工具：配置文件驱动，支持按桶抽取、按类去重、bitmap 版本记录与断点续传，内置 caption / OCR 与 interleaved QA 数据增强器
     - 参与设计数据治理体系：数据集三轴分类规范与配置文件格式、存量数据迁移与新旧分类映射打标；负责大海捞针 NIAH 任务的同源合成增强数据建设
   - heading: MOSS-VL
     url: https://github.com/OpenMOSS/MOSS-VL
-    subheading: OpenMOSS · 数据基建与数据组装
+    subheading: 数据基建与数据组装
     lines:
     - 从零搭建训练数据基建：视频 / 图片 / 文本预处理、精确匹配去重与 MongoDB 入库流程，首批入库 478 个数据集（约 6,600 万条 QA、6,641 万图片、413 万视频）
     - 负责预训练 Stage 1–4 与 SFT 各阶段的数据组装与逐版交付：数据梳理、token 统计、配比抽取
