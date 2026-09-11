@@ -15,6 +15,7 @@
 #              subheading: 副标题（可选）
 #              date: 右侧时间（可选）
 #              lines: 要点列表（可选，支持 HTML 链接）
+#              lead: true  领头条目（如机构/公司），标题加大一号以区分层级（可选）
 #         2) 纯要点式（技能、荣誉等）：
 #              bullets: [要点1, 要点2, ...]
 #   新增板块直接在 sections 末尾追加即可。
@@ -56,6 +57,7 @@ sections:
     url: https://www.open-moss.com/
     subheading: 算法实习生
     date: 2025.07 – 至今
+    lead: true
     lines:
     - MOSS-VL 系列模型 Core Contributor，负责训练数据方向，覆盖数据基建、数据组装与交付、数据合成，贯穿预训练与后训练全阶段
   - heading: MOSS-VL-RealTime
