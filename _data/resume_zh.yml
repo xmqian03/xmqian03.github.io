@@ -15,6 +15,7 @@
 #              subheading: 副标题（可选）
 #              date: 右侧时间（可选）
 #              lines: 要点列表（可选，支持 HTML 链接）
+#              nested: true  表示该条目是上一条目下的子项目，渲染时左缩进（可选）
 #         2) 纯要点式（技能、荣誉等）：
 #              bullets: [要点1, 要点2, ...]
 #   新增板块直接在 sections 末尾追加即可。
@@ -61,6 +62,8 @@ sections:
   - heading: MOSS-VL-RealTime
     url: https://github.com/OpenMOSS/MOSS-VL
     subheading: SFT 数据负责人
+    date: 2026.04 – 2026.07
+    nested: true
     lines:
     - 设计并定稿 42 个数据桶的 SFT 数据组装 recipe（QA 主配比、类别与数据集均匀 + 桶内 token balanced 策略），三版迭代交付，最终版含 756 万条训练样本
     - 独立开发 asb 自动化数据组装工具：配置文件驱动，支持按桶抽取、按类去重、bitmap 版本记录与断点续传，内置 caption / OCR 与 interleaved QA 数据增强器
@@ -68,6 +71,8 @@ sections:
   - heading: MOSS-VL
     url: https://github.com/OpenMOSS/MOSS-VL
     subheading: 数据基建与数据组装
+    date: 2025.09 – 2026.04
+    nested: true
     lines:
     - 从零搭建训练数据基建：视频 / 图片 / 文本预处理、精确匹配去重与 MongoDB 入库流程，首批入库 478 个数据集（约 6,600 万条 QA、6,641 万图片、413 万视频）
     - 负责预训练 Stage 1–4 与 SFT 各阶段的数据组装与逐版交付：数据梳理、token 统计、配比抽取
