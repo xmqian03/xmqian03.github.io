@@ -38,7 +38,7 @@ layout: default
       <section class="resume-section">
         <h2 class="resume-section-title">{{ section.title }}</h2>
         {% for item in section.items %}
-          <div class="resume-item{% if item.nested %} resume-item-nested{% endif %}">
+          <div class="resume-item">
             {% if item.bullets %}
               <ul class="resume-lines">
                 {% for b in item.bullets %}
@@ -170,10 +170,6 @@ layout: default
   }
   .resume-item:last-child {
     margin-bottom: 0;
-  }
-  /* 子条目（机构下的项目/版本）：顶格，标题用常规字重区分层级 */
-  .resume-item-nested .resume-item-heading {
-    font-weight: 400;
   }
   .resume-item-head {
     display: flex;
