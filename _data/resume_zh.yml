@@ -94,6 +94,6 @@ sections:
 - title: 技能
   items:
   - bullets:
-    - 编程语言：Python（熟练）、Shell、C++
+    - 编程语言：Python、Shell、C++
     - 框架与工具：PyTorch、Hugging Face Transformers、SGLang、Git、Docker
-    - 方向相关：多模态大模型训练数据管线、大规模数据合成与清洗、模型评测
+    - 方向相关：多模态大模型训练数据管线、大规模数据合成与清洗、模型训练与评测
