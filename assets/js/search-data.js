@@ -402,7 +402,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/moss_vl/";
             },},{id: "projects-moss-vl-realtime",
-          title: 'MOSS-VL-RealTime',
+          title: 'MOSS-VL-Realtime',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/moss_vl_realtime/";
