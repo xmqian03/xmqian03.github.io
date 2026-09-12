@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MOSS-VL-RealTime
+title: MOSS-VL-Realtime
 subtitle: An open vision-language model family for real-time interaction
 img: assets/img/publication_preview/moss_vl.png
 importance: 1
