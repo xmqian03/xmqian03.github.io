@@ -19,4 +19,4 @@ The first independently trained run of the MOSS-VL architecture, released alongs
 - Built the team's training-data infrastructure: video/image/text preprocessing and deduplication pipelines, MongoDB schema iteration and data import/export flows
 - Owned training-data assembly and versioned delivery for pre-training stages 1–4 and SFT: dataset curation, token statistics, and mixture-ratio sampling
 - Designed and implemented image/video caption augmentation schemes (random perturbation, multi-image sequence expansion, multi-image collage, multi-video interleaving, etc.); restructured image-grounding data into multi-turn, multi-image form
-- Ran the identity-data synthesis pipeline end to end, producing 200K samples for pre-training stage 4 (long-context and annealing) and 50K for SFT
+- Ran the model identity data synthesis pipeline end to end, producing 200K samples for pre-training stage 4 (long-context and annealing) and 50K for SFT

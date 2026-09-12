@@ -78,7 +78,7 @@ sections:
     - 搭建训练数据基建：视频 / 图片 / 文本预处理与去重管线、MongoDB schema 迭代与出入库流程
     - 负责预训练 Stage 1–4 与 SFT 的数据组装与逐版交付：数据梳理、token 统计、配比抽取
     - 设计并实现 image / video caption 数据增强方案（随机扰动、多图序列扩展、多图拼接、多视频 interleaved 等）；完成 image grounding 数据的多轮多图改造
-    - 完成身份信息数据合成全流程，量产 200K 用于预训练第四阶段（长文和退火）、50K 用于 SFT 阶段
+    - 完成模型身份信息数据合成全流程，量产 200K 用于预训练第四阶段（长文和退火）、50K 用于 SFT 阶段
 - title: 技术报告
   items:
   - heading: MOSS-VL Technical Report
