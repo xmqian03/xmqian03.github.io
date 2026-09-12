@@ -71,13 +71,14 @@ sections:
     - 参与设计数据治理体系：数据集三轴分类规范与配置文件格式、存量数据迁移与新旧分类映射打标；负责大海捞针 NIAH 任务的同源合成增强数据建设
   - heading: MOSS-VL
     url: https://github.com/OpenMOSS/MOSS-VL
-    subheading: 数据基建与数据组装
+    subheading: 数据基建、组装与合成
     date: 2025.09 – 2026.04
     nested: true
     lines:
-    - 从零搭建训练数据基建：视频 / 图片 / 文本预处理、精确匹配去重与 MongoDB 入库流程，首批入库 478 个数据集（约 6,600 万条 QA、6,641 万图片、413 万视频）
-    - 负责预训练 Stage 1–4 与 SFT 各阶段的数据组装与逐版交付：数据梳理、token 统计、配比抽取
-    - 设计并实现 image / video caption 数据增强方案（多图序列扩展、多图拼接、多视频 interleaved 等）；完成身份信息数据的检测、改造与合成全流程
+    - 搭建训练数据基建：视频 / 图片 / 文本预处理与去重管线、MongoDB schema 迭代与出入库流程
+    - 负责预训练 Stage 1–4 与 SFT 的数据组装与逐版交付：数据梳理、token 统计、配比抽取
+    - 设计并实现 image / video caption 数据增强方案（随机扰动、多图序列扩展、多图拼接、多视频 interleaved 等）；完成 image grounding 数据的多轮多图改造
+    - 完成身份信息数据合成全流程，量产 200K 用于预训练第四阶段（长文和退火）、50K 用于 SFT 阶段
 - title: 技术报告
   items:
   - heading: MOSS-VL Technical Report
