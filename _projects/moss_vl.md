@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MOSS-VL (0408)
+title: MOSS-VL
 subtitle: Data infrastructure and full-stage training data assembly
 img: assets/img/publication_preview/moss_vl.png
 importance: 2
