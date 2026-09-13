@@ -391,13 +391,8 @@ ninja.data = [{
           section: "News",},{id: "news-we-released-the-moss-vl-technical-report-an-open-vision-language-model-family-for-real-time-interaction",
           title: 'We released the MOSS-VL Technical Report, an open vision-language model family for real-time...',
           description: "",
-          section: "News",},{id: "projects-moss-video-preview",
-          title: 'MOSS-Video-Preview',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/moss_video_preview/";
-            },},{id: "projects-moss-vl-0408",
-          title: 'MOSS-VL (0408)',
+          section: "News",},{id: "projects-moss-vl",
+          title: 'MOSS-VL',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/moss_vl/";
