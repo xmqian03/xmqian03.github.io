@@ -16,9 +16,9 @@ links:
     url: https://openmoss.ai/MOSS-VL/
 ---
 
-MOSS-VL treats real-time interaction — perceiving while it speaks — as a first-class capability. Gated cross-attention with XRoPE lets the model keep watching incoming frames while generating, and a synthesized interaction corpus supervises when to speak, when to stay silent, and when to revise. MOSS-VL-Realtime posts the best average on three of four streaming benchmarks among open-source streaming models.
+MOSS-VL-Realtime treats real-time interaction — perceiving while it speaks — as a first-class capability: gated cross-attention lets the model keep watching incoming frames while generating, and a synthesized interaction corpus supervises when to speak, stay silent, or revise. It posts the best average on three of four streaming benchmarks among open-source streaming models.
 
-**My role — Core Contributor, data assembly, tooling, governance & synthesis:**
+As a core contributor, my work on this release spanned data assembly, tooling, governance and synthesis:
 
 - Owned training-data assembly and versioned delivery for pre-training stages 1–4 and SFT: dataset curation, token statistics, and mixture-ratio sampling
 - Developed `asb`, the team's automated training-data assembly tool: config-file driven, per-bucket sampling, per-category deduplication, bitmap-based versioning and resumable assembly, with built-in caption/OCR and interleaved-QA augmenters
