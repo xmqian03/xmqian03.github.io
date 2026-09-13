@@ -18,9 +18,9 @@ links:
 
 MOSS-VL treats real-time interaction — perceiving while it speaks — as a first-class capability. Gated cross-attention with XRoPE lets the model keep watching incoming frames while generating, and a synthesized interaction corpus supervises when to speak, when to stay silent, and when to revise. MOSS-VL-Realtime posts the best average on three of four streaming benchmarks among open-source streaming models.
 
-**My role — Core Contributor, SFT data owner:**
+**My role — Core Contributor, data assembly, tooling, governance & synthesis:**
 
-- Designed and finalized the SFT data recipe of 42 data buckets (QA-led mixture with category-uniform and per-bucket token-balanced sampling), and delivered three iterated versions; the final release (sft-0630-2) contains 7.56M training samples
-- Independently developed `asb`, the team's automated training-data assembly tool: config-file driven, with per-bucket sampling, per-category deduplication, bitmap-based versioning and resumable assembly, plus built-in caption/OCR and interleaved-QA data augmenters
-- Co-designed the team's data governance system: a three-axis dataset taxonomy with YAML-based configuration, legacy dataset migration, and automated category labeling
-- Built needle-in-a-haystack (NIAH) synthetic augmentation data targeting the 8 task types of MMLongBench, in text and multi-image form
+- Owned training-data assembly and versioned delivery for pre-training stages 1–4 and SFT: dataset curation, token statistics, and mixture-ratio sampling
+- Developed `asb`, the team's automated training-data assembly tool: config-file driven, per-bucket sampling, per-category deduplication, bitmap-based versioning and resumable assembly, with built-in caption/OCR and interleaved-QA augmenters
+- Co-designed the team's data governance system: a dataset taxonomy of 32 categories with YAML-based configuration; migrated legacy datasets with old-to-new category mapping and model-assisted labeling
+- Built homologous synthetic data for needle-in-a-haystack (NIAH) tasks, covering the 8 task types of MMLongBench's NIAH track (text and image needles) — 100K samples for pre-training stage-4 annealing and 30K for SFT
